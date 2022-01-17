@@ -1,0 +1,30 @@
+ALGORITHM HashCommun
+VAR
+  A : ARRAY_OF INTEGER[] := [3,1,7,9]
+  B : ARRAY_OF INTEGER[] := [2,4,1,9,3]
+  C : HASH_TABLE<INTEGER,INTEGER>
+  sum : INTEGER := 0
+  i: INTEGER
+
+BEGIN
+    
+    FOR i FROM 1 TO A.length STEP 1  DO
+        C.insert(A[i],1)
+    END_FOR
+
+    FOR i FROM 1 TO B.length STEP 1  DO
+        IF (C.lookup(B[i]) = true) THEN
+             C.insert(B[i],2)
+        ELSE
+            C.insert(B[i],1)
+        END_IF
+    END_FOR
+
+    FOR i FROM 1 TO A.length STEP 1  DO
+        IF (C.get(A[i]) = 2) THEN
+            sum = sum + A[i]*2
+        END_IF
+    END_FOR
+
+    Write("La somme : ",sum)
+END

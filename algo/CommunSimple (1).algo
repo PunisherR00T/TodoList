@@ -1,0 +1,21 @@
+ALGORITHM CommunSimple
+VAR
+  A : ARRAY_OF INTEGER[] := [3,1,7,9]
+  B : ARRAY_OF INTEGER[] := [2,4,1,9,3]
+  sum : INTEGER := 0
+  i,j: INTEGER
+
+BEGIN
+
+   FOR i FROM 1 TO A.length STEP 1  DO
+            FOR j FROM 1 TO B.length STEP 1  DO
+                IF (A[i] = B[j]) THEN
+                    sum = sum + A[i]*2
+                END_IF
+
+            END_FOR
+   END_FOR 
+
+   Write("La somme est : ",sum )
+   
+END
