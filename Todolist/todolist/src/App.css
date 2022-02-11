@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+.chateb{
+    text-decoration: line-through;
+}
+html {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/003/169/779/non_2x/wood-texture-background-free-vector.jpg);
+}
+#title {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#note {
+    background-image: url(https://data2.1freewallpapers.com/download/notebook-texture-fields-lines.jpg);
+    text-align: center;
+    border-style: solid;
+    margin: 4% 37% 4% 37%;
+}
+
+#task h2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+img {
+    width: 6%;
+    cursor: pointer;
+}
+#pen {
+    margin: 0 0 -6px 12px;
+
+}
+
+h1{
+    text-decoration: underline;
+}
+aside {
+    min-height: 350px;
+}
